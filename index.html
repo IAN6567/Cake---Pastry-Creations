@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake & Pastries | Delicious Treats for Every Occasion</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <i class="fas fa-birthday-cake"></i>
+          <span>Cake & Pastries</span>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="mainNav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#booking">Book Now</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#location">Find Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1>Delicious <span>Cakes & Pastries</span> for Every Occasion</h1>
+          <p>
+            Order, book, and celebrate with us today! From birthday cakes to
+            wedding pastries, we create sweet memories for every special moment.
+          </p>
+          <a
+            href="https://wa.me/254718868293?text=Hi!%20I'm%20interested%20in%20ordering%20cakes%20or%20pastries."
+            class="btn"
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp"></i> Book Now on WhatsApp
+          </a>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            alt="Beautiful cake display"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h2 class="section-title">Our Sweet Creations</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px">
+          Explore our delicious selection of cakes and pastries, crafted with
+          love and the finest ingredients for your special occasions.
+        </p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Chocolate Cake"
+            />
+            <div class="caption">
+              <h3>Chocolate Dream Cake</h3>
+              <p>Rich, moist chocolate layers with creamy frosting</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1559620192-032c64bc86af?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Wedding Cake"
+            />
+            <div class="caption">
+              <h3>Elegant Wedding Cake</h3>
+              <p>Custom designed for your special day</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-1.2.1&auto=format&fit=crop&w-600&q=80"
+              alt="Colorful Pastries"
+            />
+            <div class="caption">
+              <h3>Colorful Pastries</h3>
+              <p>Assorted pastries for any celebration</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1519861531473-920034658307?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Birthday Cake"
+            />
+            <div class="caption">
+              <h3>Fun Birthday Cake</h3>
+              <p>Customized for all ages and themes</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Cupcakes"
+            />
+            <div class="caption">
+              <h3>Delicious Cupcakes</h3>
+              <p>Perfect for parties and events</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+              alt="Specialty Cake"
+            />
+            <div class="caption">
+              <h3>Specialty Design Cake</h3>
+              <p>Unique creations for your celebrations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+      <div class="container">
+        <h2 class="section-title">Book Your Cake</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px">
+          Fill out the form below and we'll contact you via WhatsApp to confirm
+          your order details.
+        </p>
+
+        <div class="booking-form">
+          <form id="bookingForm">
+            <div class="form-row">
+              <div class="form-col">
+                <div class="form-group">
+                  <label for="cakeType">Cake Type</label>
+                  <select class="form-control" id="cakeType" required>
+                    <option value="" disabled selected>Select cake type</option>
+                    <option value="Birthday Cake">Birthday Cake</option>
+                    <option value="Wedding Cake">Wedding Cake</option>
+                    <option value="Anniversary Cake">Anniversary Cake</option>
+                    <option value="Custom Design">Custom Design</option>
+                    <option value="Pastries">Pastries</option>
+                    <option value="Cupcakes">Cupcakes</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-col">
+                <div class="form-group">
+                  <label for="size">Size</label>
+                  <select class="form-control" id="size" required>
+                    <option value="" disabled selected>Select cake size</option>
+                    <option value="Small (6-8 servings)">
+                      Small (6-8 servings)
+                    </option>
+                    <option value="Medium (10-12 servings)">
+                      Medium (10-12 servings)
+                    </option>
+                    <option value="Large (15-20 servings)">
+                      Large (15-20 servings)
+                    </option>
+                    <option value="Extra Large (25+ servings)">
+                      Extra Large (25+ servings)
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-col">
+                <div class="form-group">
+                  <label for="date">Preferred Date</label>
+                  <input type="date" class="form-control" id="date" required />
+                </div>
+              </div>
+              <div class="form-col">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-col">
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-col">
+                <div class="form-group">
+                  <label for="email">Email (optional)</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Special Instructions</label>
+              <textarea
+                class="form-control"
+                id="message"
+                placeholder="Tell us about your design preferences, allergies, or any special requests..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%">
+              <i class="fab fa-whatsapp"></i> Send Booking via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social & Contact Section -->
+    <section class="social-contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Connect With Us</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px">
+          Follow us on social media for the latest creations and promotions, or
+          contact us directly.
+        </p>
+
+        <div class="social-icons">
+          <a
+            href="https://instagram.com"
+            class="social-icon instagram"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://tiktok.com"
+            class="social-icon tiktok"
+            target="_blank"
+          >
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="tel:0718868293" class="social-icon phone">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>0718 868 293</span>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp: 0718 868 293</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <span>Mon-Sat: 8am-7pm | Sun: 10am-5pm</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map" id="location">
+      <div class="container">
+        <h2 class="section-title">Find Us in Chepterit</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px">
+          Visit our bakery in Chepterit to see our delicious creations in person
+          or place your order directly.
+        </p>
+
+        <div class="map-container">
+          <!-- Google Maps Embed for Chepterit -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63820.58143312474!2d35.55874635762567!3d-0.49913396555144314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18299c3e48b0f8d3%3A0xf889a57f987b664b!2sChepterit%2C%20Kenya!5e0!3m2!1sen!2ske!4v1647357211565!5m2!1sen!2ske"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div style="flex: 1; min-width: 300px">
+            <div class="footer-logo">Cake & Pastries</div>
+            <p>Creating sweet memories for every occasion since 2015</p>
+          </div>
+
+          <div style="flex: 1; min-width: 300px">
+            <h3 style="color: white; margin-bottom: 20px">Quick Links</h3>
+            <ul style="list-style: none">
+              <li style="margin-bottom: 10px">
+                <a href="#home" style="color: #ddd; text-decoration: none"
+                  >Home</a
+                >
+              </li>
+              <li style="margin-bottom: 10px">
+                <a href="#gallery" style="color: #ddd; text-decoration: none"
+                  >Gallery</a
+                >
+              </li>
+              <li style="margin-bottom: 10px">
+                <a href="#booking" style="color: #ddd; text-decoration: none"
+                  >Book Now</a
+                >
+              </li>
+              <li style="margin-bottom: 10px">
+                <a href="#contact" style="color: #ddd; text-decoration: none"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          &copy; 2023 Cake & Pastries. All rights reserved. | Designed for
+          Chepterit
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
